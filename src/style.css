@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+}
+
+header {
+    width: 100%;
+    flex: 1 0 10vh;
+    background-color: #0D0D0D;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+header i {
+    margin-inline-end: 0.25rem;
+}
+
+.inner-container {
+    display: flex;
+    width: 80vw;
+}
+
+main {
+    width: 100%;
+    flex: 8 0 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    flex: 3 0 0;
+    padding-block: 5px;
+    position: relative;
+}
+
+.todo-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    position: relative;
+    margin-block-end: 1em;
+}
+
+.todo-done {
+    vertical-align: middle;
+}
+
+.todo-buttons {
+    margin-block: 0.5rem;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.todo-buttons button {
+    border: 1px solid black;
+    padding: 0.25rem;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.25rem;
+}
+
+.true {
+    color: green;
+}
+
+.false {
+    color: red;
+}
+
+.true-button {
+    color: green;
+    font-size: 1.25rem;
+}
+
+.true-button:hover {
+    background-color: green;
+    border-color: green;
+    color: white;
+    transition-duration: 250ms;
+}
+
+.false-button {
+    color: red;
+    font-size: 1.25rem;
+}
+
+.false-button:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+    transition-duration: 250ms;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.high-priority {
+    border: 2px solid red;
+}
+
+.medium-priority {
+    border: 2px solid orange;
+}
+
+.low-priority {
+    border: 2px solid green;
+}
+
+#task {
+    padding: 1rem;
+}
+
+#task > * {
+    margin-block: 0.5rem;
+}
+
+.label-title {
+    flex: 1 0 0;
+}
+
+input {
+    font-size: 1.25rem;
+    flex: 7 0 0;
+}
+
+.label-buttons {
+    flex: 7 0 0;
+}
+
+textarea {
+    font-size: 1.25rem;
+    font-family: Roboto;
+    flex: 7 0 0;
+}
+
+#back-button {
+    border: none;
+    background-color: white;
+    font-size: 1.25rem;
+}
+
+#back-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#back-button-icon {
+    margin-inline-end: 0.25rem;
+}
+
+.task-edit-label {
+    font-size: 1.25rem;
+}
+
+.task-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.task-button {
+    border: 1px solid black;
+    padding: 0.25rem;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.25rem;
+}
+
+.task-button:hover {
+    cursor: pointer;
+}
+
+.plus-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.25rem;
+}
+
+.plus-icon:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 250ms;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.chameleon-button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 250ms;
+}
+
+.selected-button {
+    background-color: #EAEAEA;
+}
+
+footer {
+    width: 100%;
+    flex: 1 0 10vh;
+    background-color: #0D0D0D;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #task {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-container {
+        width: 100vw;
+    }
+    .task-edit-label {
+        flex-direction: column;
+    }
+}
